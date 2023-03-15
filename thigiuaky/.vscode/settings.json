@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "graph_jrb.h": "c",
+        "ctype.h": "c",
+        "dllist.h": "c"
+    }
+}

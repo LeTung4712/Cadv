@@ -1,0 +1,38 @@
+Ý tưởng thuật toán
+Từ đỉnh (nút) gốc ban đầu.
+
+Duyệt đi xa nhất theo từng nhánh.
+Khi nhánh đã duyệt hết, lùi về từng đỉnh để tìm và duyệt những nhánh tiếp theo.
+    Quá trình duyệt chỉ dừng lại khi tìm thấy đỉnh cần tìm 
+    hoặc tất cả đỉnh đều đã được duyệt qua.
+Thuật giải
+Một số quy ước:
+
+Open: là tập hợp các đỉnh chờ được xét ở bước tiếp theo theo ngăn xếp (ngăn xếp: dãy các phần tử mà khi thêm phần tử vào sẽ thêm vào đầu dãy, còn khi lấy phần tử ra sẽ lấy ở phần tử đứng đầu dãy).
+Close: là tập hợp các đỉnh đã xét, đã duyệt qua.
+s: là đỉnh xuất phát, đỉnh gốc ban đầu trong quá trình tìm kiếm.
+g: đỉnh đích cần tìm.
+p: đỉnh đang xét, đang duyệt.
+
+Trình bày thuật giải:
+
+1.Tập Open chứa đỉnh gốc s chờ được xét.
+2.Kiểm tra tập Open có rỗng không.
+    Nếu tập Open không rỗng, lấy một đỉnh ra khỏi tập Open làm đỉnh đang xét p.
+    Nếu p là đỉnh g cần tìm, kết thúc tìm kiếm.
+    Nếu tập Open rỗng, tiến đến bước 4.
+3.Đưa đỉnh p vào tập Close, sau đó xác định các đỉnh kề với đỉnh p vừa xét.
+    Nếu các đỉnh kề không thuộc tập Close, đưa chúng vào đầu tập Open. Quay lại bước 2.
+4.Kết luận không tìm ra đỉnh đích cần tìm.
+
+Nhận xét
+
+Ưu điểm
+Xét duyệt tất cả các đỉnh để trả về kết quả.
+Nếu số đỉnh là hữu hạn, thuật toán chắc chắn tìm ra kết quả.
+
+Khuyết điểm
+Mang tính chất vét cạn, không nên áp dụng nếu duyệt số đỉnh quá lớn.
+Mang tính chất mù quáng, duyệt tất cả đỉnh,
+    không chú ý đến thông tin trong các đỉnh để duyệt hiệu quả, 
+    dẫn đến duyệt qua các đỉnh không cần thiết.

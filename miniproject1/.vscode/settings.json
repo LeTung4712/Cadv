@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "soundex.h": "c",
+        "ncurses.h": "c",
+        "cstdio": "c",
+        "*.tcc": "c",
+        "stdio.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "cctype": "c",
+        "stdio.h": "c",
+        "ctype.h": "c",
+        "graph_jrb.h": "c"
+    }
+}

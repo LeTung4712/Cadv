@@ -1,0 +1,13 @@
+Mục đích của bài này là mô phỏng bản đồ xe buýt HàNội
+⚫Trước tiên, bạn cần sưu tập dữ liệu về hệ thống cáctuyến buýt Hà nội theo dạng đồ thị, trong đó:
+⚫Mỗi đỉnh là 1 trạm xe buýt ứng với 1 điểm trong Hà nội⚫Mỗi cạnh nối trạm xe buýt thông qua tuyến buýt.
+⚫Ví dụ, có 16 trạm trên tuyến buýt 1A: 
+“Yên Phụ -Hàng Ðậu -Hàng Cót -Hàng Gà -Hàng Ðiếu -Đường Thành -Phủ Doãn-Triệu Quốc Đạt
+ -Hai Bà Trưng -Lê Duẩn -KhâmThiên -Nguyễn Lương Bằng-Tây Sơn -Nguyễn Trãi -Trần Phú (HàĐông) -Bến xe Hà Ðông”
+⚫Tham khảo tại: http://timbus.vn/fleets.aspx
+⚫Mỗi cạnh trên đồ thị được gắn với tuyến bus từ 1điểm này đến điểm khác.
+ Ví dụ, cạnh “Yên Phụ -Trần Nhật Duật” được gắn với 4A, 10A.
+⚫Tổ chức và lưu trữ dữ liệu trong 1 file nạp vào chươngtrình khi chạy.
+⚫Viết lại graph API để lưu bản đồ bus trong bộ nhớ
+⚫Xây dựng hàm để tìm đường đi ngắn nhất giữa 2điểm. 
+ Ví dụ từ “Yên Phụ” đến “Ngô Quyền”
